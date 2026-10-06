@@ -1,0 +1,24 @@
+graph Campus {
+  node [shape=box, style=rounded];
+  "Main Gate" -- "First Year Block" [label="200 m"];
+  "Main Gate" -- "Central Ground" [label="200 m"];
+  "Main Gate" -- "Security Office" [label="60 m"];
+  "First Year Block" -- "IT Department" [label="100 m"];
+  "First Year Block" -- "Admin Block" [label="150 m"];
+  "Central Ground" -- "Hostel" [label="150 m"];
+  "Central Ground" -- "Admin Block" [label="180 m"];
+  "IT Department" -- "AI & DS Department" [label="100 m"];
+  "IT Department" -- "Library" [label="180 m"];
+  "Admin Block" -- "Library" [label="120 m"];
+  "Admin Block" -- "Fire Station" [label="100 m"];
+  "Hostel" -- "Medical Center" [label="200 m"];
+  "Hostel" -- "Fire Station" [label="130 m", color=red, penwidth=3];
+  "AI & DS Department" -- "Mechanical Department" [label="60 m"];
+  "AI & DS Department" -- "E&TC Department" [label="50 m"];
+  "Library" -- "E&TC Department" [label="100 m"];
+  "Library" -- "Canteen" [label="80 m"];
+  "Library" -- "Medical Center" [label="90 m"];
+  "Mechanical Department" -- "Canteen" [label="70 m"];
+  "E&TC Department" -- "Canteen" [label="40 m"];
+  "Canteen" -- "Medical Center" [label="110 m"];
+}
